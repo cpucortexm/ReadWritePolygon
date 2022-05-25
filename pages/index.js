@@ -164,7 +164,7 @@ export default function Home() {
         </main>
       <footer className="mt-20">
         <a
-          href="https://github.com/tomhirst/solidity-nextjs-starter/blob/main/README.md"
+          href="https://github.com/cpucortexm/ReadWritePolygon/blob/main/README.md"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600 hover:text-blue-700"

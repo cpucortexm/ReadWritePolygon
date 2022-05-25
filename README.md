@@ -9,7 +9,7 @@
 
 ### Clone This Repo
 
-Use `git clone https://github.com/cpucortexm/` to get the files within this repository onto your local machine.
+Use `git clone https://github.com/cpucortexm/ReadWritePolygon.git` to get the files within this repository onto your local machine.
 
 ## Environment Setup
 
@@ -19,7 +19,7 @@ Run `npm install`.
 
 ### Adding Polygon Test Account To MetaMask
 
-Create a network for Polygon Mumbai testnet with a name (say `alchemyMumbai`) and RPC URL of Alchemy. Open your MetaMask browser extension and change the network to `alchemyMumbai`.
+Create a network for Polygon Mumbai testnet with a name (e.g `alchemyMumbai`) and RPC URL of Alchemy. Open your MetaMask browser extension and change the network to `alchemyMumbai`.
 
 Then, view the account details of your test account. Click `Export Private Key`. After entering your password, you'll be given a private key. Copy and paste your private key as the value of `POLYGON_TEST2_PRIVATE_KEY` in `.env`.
 
@@ -41,16 +41,18 @@ If you're successful, you'll get a confirmation message as follows:
 ReadWrite deployed to: < deployed address >
 ```
 
-You can use the already deployed contract at :0x731407D8B0Be8Ad603e3F15997013986eC034Bb4
+You can use the already deployed contract at :0x6105a06D661ef517422008AEDc9CfA092bc7Bf64
 
 ### Connecting The Front-End
 
-In `.env` set the `NEXT_PUBLIC_POLYGON_READWRITE_ADDRESS` environment variable to the address your smart contract was deployed to. For example, `0x731407D8B0Be8Ad603e3F15997013986eC034Bb4`.
+In `.env` set the `NEXT_PUBLIC_POLYGON_READWRITE_ADDRESS` environment variable to the address your smart contract was deployed to. For example, `0x6105a06D661ef517422008AEDc9CfA092bc7Bf64`.
 
-## To start the demo
+## To start the demo locally
 
 ```
    npm run dev
 ```
 
 OR use the app already hosted on vercel at
+
+https://read-write-polygon.vercel.app/
