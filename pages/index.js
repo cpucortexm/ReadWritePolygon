@@ -21,7 +21,15 @@ export default function Home() {
   // If wallet is already connected...
   useEffect( () => {
     if(! hasEthereum()) {
-      setConnectedWalletAddressState(`MetaMask unavailable`)
+      setConnectedWalletAddressState(
+        <p>
+          {" "}
+          🦊{" "}
+          <a target="_blank" rel="noopener noreferrer" href={`https://metamask.io/download.html`}>
+            You must install Metamask, a virtual Ethereum wallet, in your
+            browser.
+          </a>
+        </p>)
       return
     }
     async function setConnectedWalletAddress() {
