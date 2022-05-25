@@ -8,8 +8,8 @@
 import Head from 'next/head'
 import { useEffect, useState, useRef } from 'react'
 import { ethers } from 'ethers'
-import { hasEthereum } from '../utils/ethereum'
-import ReadWrite from '../src/artifacts/contracts/ReadWrite.sol/ReadWrite.json'
+import { hasEthereum } from '/utils/ethereum'
+import ReadWrite from '/src/artifacts/contracts/ReadWrite.sol/ReadWrite.json'
 
 export default function Home() {
   const [message, setMessageState] = useState('')
